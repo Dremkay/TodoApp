@@ -11,10 +11,10 @@
         <header>
             <div class="container">
                 <div class="logo-text">
-                    <h2>Todo App</h2>
+                    <a href=""><h2>Todo App</h2></a>
                 </div>
                 <ul>
-                    <li><a href="http://">Home</a></li>
+                    <li><a href="http://" class="active">Home</a></li>
                     <li><a href="http://">About</a></li>
                     <li><a href="">Signup</a></li>
                 </ul>
@@ -22,51 +22,141 @@
         </header>
 
         <main>
-            <section class="accept-box">
-                <form action="" method="post">
-                    <input type="text" name="text" id="text" placeholder="Enter todo">
-                    <button type="submit">Add</button>
-                </form>
-            </section>
-            <div id="todos">
-                <div class="todo-item">
-                    <p>play games</p> 
-                    <div>
-                        <a href=""><button class="btn check-btn">Check/un-check</button></a>
-                        <a href=""><button class="btn delete-btn">Delete</button></a>
-                    </div>
-                </div>
+            <div class="center">
+                <section class="accept-box">
+                    <form action="" method="post">
+                        <input type="text" name="text" id="text" autocomplete="off" placeholder="Enter to-do item">
+                        <button type="submit">Add</button>
+                    </form>
+                </section>
+                <div id="todos">
+                    <table>
+                        <!-- <thead>
+                            <th>Number</th>
+                            <th>Item</th>
+                            <th>Check</th>
+                            <th>Delete</th>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>Play games</td>
+                                <div class="btns">
+                                    <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                    <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+                                </div>
+                            </tr>
 
-                <div class="todo-item">
-                    <p>read java books</p> 
-                    <div>
-                        <a href=""><button class="btn check-btn">Check/un-check</button></a>
-                        <a href=""><button class="btn delete-btn">Delete</button></a>
-                    </div>
-                </div>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>Read java books</td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
 
-                <div class="todo-item">
-                    <p>get some food</p> 
-                    <div>
-                        <a href=""><button class="btn check-btn">Check/un-check</button></a>
-                        <a href=""><button class="btn delete-btn">Delete</button></a>
-                    </div>
-                </div>
+                            </tr>
 
-                <div class="todo-item">
-                    <p>watch tutorials</p> 
-                    <div>
-                        <a href=""><button class="btn check-btn">Check/un-check</button></a>
-                        <a href=""><button class="btn delete-btn">Delete</button></a>
-                    </div>
-                </div>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td><strike>Read java books</strike> </td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
 
-                <div class="todo-item">
-                    <p>learn some solidity</p> 
-                    <div>
-                        <a href=""><button class="btn check-btn">Check/Un-check</button></a>
-                        <a href=""><button class="btn delete-btn">Delete</button></a>
+                            </tr>
+
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>Get some food</td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+
+                            </tr>
+
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>Watch tutorials</td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+
+                            </tr>
+
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td><strike>Read java books</strike> </td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+
+                            </tr>
+
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>Get some food</td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+
+                            </tr>
+
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td><strike>Read java books</strike> </td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+
+                            </tr>
+
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>Get some food</td>
+                                <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+
+                            </tr>
+
+                        
+
+
+
+                        </tbody>
+                    </table>
+
+                    <!-- <div class="todo-item">
+                        <p>play games</p> 
+                        <div>
+                            <a href=""><button class="btn check-btn">Check</button></a>
+                            <a href=""><button class="btn delete-btn">Delete</button></a>
+                        </div>
                     </div>
+
+                    <div class="todo-item">
+                        <p>read java books</p> 
+                        <div>
+                            <a href=""><button class="btn check-btn">Check/un-check</button></a>
+                            <a href=""><button class="btn delete-btn">Delete</button></a>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <p>get some food</p> 
+                        <div>
+                            <a href=""><button class="btn check-btn">Check/un-check</button></a>
+                            <a href=""><button class="btn delete-btn">Delete</button></a>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <p>watch tutorials</p> 
+                        <div>
+                            <a href=""><button class="btn check-btn">Check/un-check</button></a>
+                            <a href=""><button class="btn delete-btn">Delete</button></a>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <p>learn some solidity</p> 
+                        <div>
+                            <a href=""><button class="btn check-btn">Check/Un-check</button></a>
+                            <a href=""><button class="btn delete-btn">Delete</button></a>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </main>
