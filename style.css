@@ -2,4 +2,74 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    /* justify-items: center; */
+}
+
+header{
+    background-color: rgb(8, 8, 8);
+    color: azure;
+    margin-bottom: 10px;
+    /* height: 100px; */
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+}
+header a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+
+}
+main{
+    width: 60%;
+    margin: auto;
+}
+
+.accept-box{
+    margin: 50px 0;
+}
+.accept-box input{
+    width: 400px;
+    height: 50px;
+}
+.accept-box button{
+    padding: 18px;
+    border-radius: 5px;
+    border-color: aqua;
+    border-width: 4px;
+
+}
+
+
+
+
+
+
+
+
+footer .container{
+    justify-content: center;
+    width: 70%;
+    font-size: 25px;
+}
+
+
+footer{
+    margin-top: 20px;
+    background-color: aquamarine;
 }
