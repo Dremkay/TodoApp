@@ -26,6 +26,7 @@
             <div class="center">
                 <section class="accept-box">
                     <form action="" method="post">
+                        {% csrf_token %}
                         <input type="text" name="text" id="text" autocomplete="off" placeholder="Enter to-do item">
                         <button type="button">Add</button>
 
@@ -40,6 +41,17 @@
                             <th>Delete</th>
                         </thead> -->
                         <tbody>
+                            {% for todo in todos%}
+                                <tr>
+                                    <!-- <td>1</td> -->
+                                    <td>{{todo}}</td>
+                                    <div class="btns">
+                                        <td><a href=""><button class="btn check-btn">Check</button></a></td>
+                                        <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
+                                    </div>
+                                </tr>
+                            {% endfor %}
+
                             <tr>
                                 <!-- <td>1</td> -->
                                 <td>Play games</td>
