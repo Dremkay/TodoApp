@@ -41,10 +41,10 @@
                             <th>Delete</th>
                         </thead> -->
                         <tbody>
-                            {% for todo in todos%}
+                            {% for todo in todos reversed%}
                                 <tr>
                                     <!-- <td>1</td> -->
-                                    <td>{{todo}}</td>
+                                    <td>{{todo|upper}}</td>
                                     <div class="btns">
                                         <td><a href=""><button class="btn check-btn">Check</button></a></td>
                                         <td><a href=""><button class="btn delete-btn">Delete</button></a></td>
