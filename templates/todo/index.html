@@ -27,8 +27,8 @@
                 <section class="accept-box">
                     <form action="" method="post">
                         {% csrf_token %}
-                        <input type="text" name="text" id="text" autocomplete="off" placeholder="Enter to-do item">
-                        <button type="button">Add</button>
+                        <input type="text" name="text" id="text" required autocomplete="off" placeholder="Enter to-do item">
+                        <button type="submit">Add</button>
 
                     </form>
                 </section>
