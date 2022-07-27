@@ -12,10 +12,10 @@
         <header>
             <div class="container">
                 <div class="logo-text">
-                    <a href=""><h2>Todo App</h2></a>
+                    <a href="/"><h2>Todo App</h2></a>
                 </div>
                 <ul>
-                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="/" class="active">Home</a></li>
                     <li><a href="/">About</a></li>
                     <li><a href="">Signup</a></li>
                 </ul>
@@ -27,12 +27,12 @@
                 <section class="accept-box">
                     <form action="" method="post">
                         {% csrf_token %}
-                        <input type="text" name="text" id="text" required autocomplete="off" placeholder="Enter to-do item">
-                        <button type="submit">Add</button>
+                        <input type="text" name="text" id="text" value="{{todo.item}}" required autocomplete="off" >
+                        <button type="submit">update</button>
 
                     </form>
                 </section>
-                <div id="todos">
+                {% comment %} <div id="todos">
                     <table>
                         <tbody>
                             {% for todo in todos reversed %}
@@ -54,7 +54,7 @@
             
                         </tbody>
                     </table>
-                </div>
+                </div> {% endcomment %}
             </div>
         </main>
 

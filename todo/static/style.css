@@ -130,7 +130,9 @@ main table{
     font-size: 20px
 }
 
-
+a{
+    text-decoration: none;
+}
 
 footer .container{
     justify-content: center;

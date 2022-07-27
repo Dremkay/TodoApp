@@ -28,4 +28,18 @@ def check(request,id):
     todo.save(update_fields=['done'])
     return redirect('index')
 
+def edit(request,id):
+    todo=Todo.objects.get(id=id)
+
+    if request.method=='POST':
+        text=request.POST['text']
+        todo.item=text
+        todo.save(update_fields=['item'])
+        return redirect('index')
+        todo=Todo.objects.get(id=id)
+        
+    context={'todo':todo}
+    return render(request,'todo/edit.html',context)
+
+
 
