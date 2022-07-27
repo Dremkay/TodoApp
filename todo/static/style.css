@@ -125,7 +125,10 @@ main table{
     background-color: yellow;
     color: black;
 }
-
+#no-todo-text{
+    color: coral;
+    font-size: 20px
+}
 
 
 
