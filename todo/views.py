@@ -46,7 +46,6 @@ def edit(request,id):
         todo.item=text
         todo.save(update_fields=['item'])
         return redirect('index')
-        todo=Todo.objects.get(id=id)
-
+        
     context={'todo':todo}
     return render(request,'todo/edit.html',context)
