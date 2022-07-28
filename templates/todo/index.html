@@ -51,9 +51,20 @@
                             {% empty %}
                                 <h1 id="no-todo-text">There are no todo items here, add some...</h1>
                             {% endfor %}
+
             
                         </tbody>
                     </table>
+                    {% if total > 0 %}
+
+                        <div class="counter">
+                            <p>Total Todos: {{total}}</p>
+                            <p>Number of executed todo: {{n_done}}</p>
+                            <p>Number of undone todo: {{n_undone}}</p>
+                        </div>
+                    {% endif %}
+
+
                 </div>
             </div>
         </main>

@@ -9,8 +9,18 @@ def index(request):
         text=request.POST['text']
         Todo.objects.create(item=text)
         return redirect('index')
-    todos=Todo.objects.all()    
-    context={'todos':todos}
+    todos=Todo.objects.all()
+    total=todos.count()
+    n_done=todos.filter(done=True).count()
+    n_undone=total-n_done
+
+    print()
+    context={
+        'todos':todos,
+        'total':total,
+        'n_done':n_done,
+        'n_undone':n_undone
+        }
     return render(request,'todo/index.html', context)
 
 def delete(request,id):
@@ -37,9 +47,6 @@ def edit(request,id):
         todo.save(update_fields=['item'])
         return redirect('index')
         todo=Todo.objects.get(id=id)
-        
+
     context={'todo':todo}
     return render(request,'todo/edit.html',context)
-
-
-
